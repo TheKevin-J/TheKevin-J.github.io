@@ -11,14 +11,14 @@
   <div id="app">
     <input v-model="inputText" type="text" placeholder="Schreib etwas...">
     <div>
-      <p>Du hast geschrieben: {{ inputText }}</p>
+      <p>RE-{{ inputText }}</p>
     </div>
     <div class="key-riddle">
       <div class="riddle-row 1">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell">06M ↓</div>
+        <div class="riddle-cell question-label">06M ↓</div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -35,7 +35,7 @@
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="e"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -51,8 +51,8 @@
       <div class="riddle-row 3">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell">04W ↓</div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell question-label">04W ↓</div>
+        <div class="riddle-cell solution"><input type="text" value="M"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -68,13 +68,13 @@
       <div class="riddle-row 4">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="f"></div>
+        <div class="riddle-cell"><input type="text" value="h"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell">09A ↓</div>
+        <div class="riddle-cell question-label">09A ↓</div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -85,13 +85,13 @@
       <div class="riddle-row 5">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="l"></div>
+        <div class="riddle-cell"><input type="text" value="y"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="n"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -100,119 +100,119 @@
         <div class="riddle-cell"></div>
       </div>
       <div class="riddle-row 6">
-        <div class="riddle-cell">03Q →</div>
+        <div class="riddle-cell question-label">03Q →</div>
+        <div class="riddle-cell solution"><input type="text" value="Q"></div>
+        <div class="riddle-cell"><input type="text" value="u"></div>
+        <div class="riddle-cell"><input type="text" value="r"></div>
+        <div class="riddle-cell"><input type="text" value="u"></div>
+        <div class="riddle-cell"><input type="text" value="p"></div>
+        <div class="riddle-cell"><input type="text" value="e"></div>
+        <div class="riddle-cell"><input type="text" value="c"></div>
+        <div class="riddle-cell"><input type="text" value="o"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell">02T ↓</div>
+        <div class="riddle-cell question-label">02T ↓</div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
       </div>
       <div class="riddle-row 7">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="g"></div>
+        <div class="riddle-cell"></div>
+        <div class="riddle-cell"></div>
+        <div class="riddle-cell question-label">07X ↓</div>
+        <div class="riddle-cell"></div>
+        <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="v"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell">07X ↓</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell solution"><input type="text" value="T"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
       </div>
       <div class="riddle-row 8">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell solution"><input type="text" value="W"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="n"></div>
+        <div class="riddle-cell question-label">11P →</div>
+        <div class="riddle-cell solution"><input type="text" value="P"></div>
+        <div class="riddle-cell"><input type="text" value="i"></div>
+        <div class="riddle-cell"><input type="text" value="n"></div>
+        <div class="riddle-cell"><input type="text" value="g"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell">11P →</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="o"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
       </div>
       <div class="riddle-row 9">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="y"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="e"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="g"></div>
+        <div class="riddle-cell question-label">05N ↓</div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell">05N ↓</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="w"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
       </div>
       <div class="riddle-row 10">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="v"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell">01C →</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell solution"><input type="text" value="X"></div>
+        <div class="riddle-cell question-label">01C →</div>
+        <div class="riddle-cell"><input type="text" value="d"></div>
+        <div class="riddle-cell"><input type="text" value="r"></div>
+        <div class="riddle-cell"><input type="text" value="a"></div>
+        <div class="riddle-cell solution"><input type="text" value="C"></div>
+        <div class="riddle-cell"><input type="text" value="h"></div>
+        <div class="riddle-cell"><input type="text" value="e"></div>
+        <div class="riddle-cell"><input type="text" value="n"></div>
         <div class="riddle-cell"></div>
       </div>
       <div class="riddle-row 11">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="e"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="u"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell solution"><input type="text" value="A"></div>
+        <div class="riddle-cell"><input type="text" value="e"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="r"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
       </div>
       <div class="riddle-row 12">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="r"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell">10R →</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell question-label">10R →</div>
+        <div class="riddle-cell"><input type="text" value="s"></div>
+        <div class="riddle-cell"><input type="text" value="y"></div>
+        <div class="riddle-cell"><input type="text" value="n"></div>
+        <div class="riddle-cell"><input type="text" value="d"></div>
+        <div class="riddle-cell solution"><input type="text" value="R"></div>
+        <div class="riddle-cell"><input type="text" value="a"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -221,14 +221,14 @@
       <div class="riddle-row 13">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="n"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="o"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -240,12 +240,12 @@
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell">13C ↓</div>
+        <div class="riddle-cell question-label">13C ↓</div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell solution"><input type="text" value="N"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -257,29 +257,29 @@
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell solution"><input type="text" value="C"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell">08G →</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell question-label">08G →</div>
+        <div class="riddle-cell"><input type="text" value="z"></div>
+        <div class="riddle-cell"><input type="text" value="i"></div>
+        <div class="riddle-cell"><input type="text" value="n"></div>
+        <div class="riddle-cell"><input type="text" value="o"></div>
+        <div class="riddle-cell solution"><input type="text" value="G"></div>
+        <div class="riddle-cell"><input type="text" value="r"></div>
+        <div class="riddle-cell"><input type="text" value="e"></div>
       </div>
       <div class="riddle-row 16">
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="i"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="g"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -291,12 +291,12 @@
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="r"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell"><input type="text" value="h"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -305,17 +305,17 @@
       </div>
       <div class="riddle-row 18">
         <div class="riddle-cell"></div>
-        <div class="riddle-cell">10W →</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+        <div class="riddle-cell question-label">10W →</div>
+        <div class="riddle-cell solution"><input type="text" value="W"></div>
+        <div class="riddle-cell"><input type="text" value="e"></div>
+        <div class="riddle-cell"><input type="text" value="i"></div>
+        <div class="riddle-cell"><input type="text" value="ß"></div>
+        <div class="riddle-cell"><input type="text" value="g"></div>
+        <div class="riddle-cell"><input type="text" value="a"></div>
+        <div class="riddle-cell"><input type="text" value="r"></div>
+        <div class="riddle-cell"><input type="text" value="t"></div>
+        <div class="riddle-cell"><input type="text" value="e"></div>
+        <div class="riddle-cell"><input type="text" value="n"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
         <div class="riddle-cell"></div>
@@ -359,6 +359,26 @@
     vertical-align: middle;
     width: calc(100% / 15); /* 15 Spalten */
     height: calc(100% / 18); /* 18 Zeilen */
+    overflow: hidden;
+
+    input[type=text] {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      font-weight: inherit;
+    }
+
+    &.solution {
+      font-weight: 900;
+
+      input[type=text] {
+        background: #dfdfdf;
+      }
+    }
+
+    &.question-label {
+      background:lightcoral;
+    }
   }
 }
 
