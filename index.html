@@ -9,343 +9,574 @@
 
 <body>
   <div id="app">
-    <input v-model="inputText" type="text" placeholder="Schreib etwas...">
-    <div>
-      <p>RE-{{ inputText }}</p>
-    </div>
-    <div class="key-riddle">
-      <div class="riddle-row 1">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell question-label">06M ↓</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+    <!-- <input v-model="s01C" type="text" placeholder="Schreib etwas..."> -->
+    <div class="container">
+      <div class="key-full-solution">
+        <div class="key-solution">RE-</div>
+        <div class="key-solution">{{ s01C }}</div>
+        <div class="key-solution">{{ s02T }}</div>
+        <div class="key-solution">{{ s03Q }}</div>
+        <div class="key-solution">{{ s04W }}</div>
+        <div class="key-solution">5</div>
+        <div class="key-solution">{{ s05N }}</div>
+        <div class="key-solution">{{ s06M }}</div>
+        <div class="key-solution">{{ s07X }}</div>
+        <div class="key-solution">{{ s08G }}</div>
+        <div class="key-solution">{{ s09A }}</div>
+        <div class="key-solution">{{ s10R }}</div>
+        <div class="key-solution">{{ s11P }}</div>
+        <div class="key-solution">{{ s12W }}</div>
+        <div class="key-solution">8</div>
+        <div class="key-solution">3</div>
+        <div class="key-solution">{{ s13C }}</div>
       </div>
-      <div class="riddle-row 2">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="e"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+      <div class="key-riddle">
+        <div class="riddle-row 1">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell question-label">06 ↓</div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 2">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 3">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell question-label">04 ↓</div>
+          <div class="riddle-cell solution"><input v-model="s06M" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 4">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell question-label">09 ↓</div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 5">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 6">
+          <div class="riddle-cell question-label">03 →</div>
+          <div class="riddle-cell solution"><input v-model="s03Q" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell question-label">02 ↓</div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 7">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell question-label">07 ↓</div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell solution"><input v-model="s02T" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 8">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell solution"><input v-model="s04W" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell question-label">11 →</div>
+          <div class="riddle-cell solution"><input v-model="s11P" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 9">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell question-label">05 ↓</div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 10">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell solution"><input v-model="s07X" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell question-label">01 →</div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell solution"><input v-model="s01C" type="text"  maxlength="1"></div> 
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 11">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell solution"><input v-model="s09A" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 12">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell question-label">10 →</div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell solution"><input v-model="s10R" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 13">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 14">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell question-label">13 ↓</div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell solution"><input  v-model="s05N" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 15">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell solution"><input  v-model="s13C" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell question-label">08 →</div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell solution"><input v-model="s08G" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+        </div>
+        <div class="riddle-row 16">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 17">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
+        <div class="riddle-row 18">
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell question-label">12 →</div>
+          <div class="riddle-cell solution"><input v-model="s12W" type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"><input type="text" value="" maxlength="1"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+          <div class="riddle-cell"></div>
+        </div>
       </div>
-      <div class="riddle-row 3">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell question-label">04W ↓</div>
-        <div class="riddle-cell solution"><input type="text" value="M"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 4">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="f"></div>
-        <div class="riddle-cell"><input type="text" value="h"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell question-label">09A ↓</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 5">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="l"></div>
-        <div class="riddle-cell"><input type="text" value="y"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="n"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 6">
-        <div class="riddle-cell question-label">03Q →</div>
-        <div class="riddle-cell solution"><input type="text" value="Q"></div>
-        <div class="riddle-cell"><input type="text" value="u"></div>
-        <div class="riddle-cell"><input type="text" value="r"></div>
-        <div class="riddle-cell"><input type="text" value="u"></div>
-        <div class="riddle-cell"><input type="text" value="p"></div>
-        <div class="riddle-cell"><input type="text" value="e"></div>
-        <div class="riddle-cell"><input type="text" value="c"></div>
-        <div class="riddle-cell"><input type="text" value="o"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell question-label">02T ↓</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 7">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="g"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell question-label">07X ↓</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="v"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell solution"><input type="text" value="T"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 8">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell solution"><input type="text" value="W"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="n"></div>
-        <div class="riddle-cell question-label">11P →</div>
-        <div class="riddle-cell solution"><input type="text" value="P"></div>
-        <div class="riddle-cell"><input type="text" value="i"></div>
-        <div class="riddle-cell"><input type="text" value="n"></div>
-        <div class="riddle-cell"><input type="text" value="g"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="o"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 9">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="y"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="e"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="g"></div>
-        <div class="riddle-cell question-label">05N ↓</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="w"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 10">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="v"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell solution"><input type="text" value="X"></div>
-        <div class="riddle-cell question-label">01C →</div>
-        <div class="riddle-cell"><input type="text" value="d"></div>
-        <div class="riddle-cell"><input type="text" value="r"></div>
-        <div class="riddle-cell"><input type="text" value="a"></div>
-        <div class="riddle-cell solution"><input type="text" value="C"></div>
-        <div class="riddle-cell"><input type="text" value="h"></div>
-        <div class="riddle-cell"><input type="text" value="e"></div>
-        <div class="riddle-cell"><input type="text" value="n"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 11">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="e"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="u"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell solution"><input type="text" value="A"></div>
-        <div class="riddle-cell"><input type="text" value="e"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="r"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 12">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="r"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell question-label">10R →</div>
-        <div class="riddle-cell"><input type="text" value="s"></div>
-        <div class="riddle-cell"><input type="text" value="y"></div>
-        <div class="riddle-cell"><input type="text" value="n"></div>
-        <div class="riddle-cell"><input type="text" value="d"></div>
-        <div class="riddle-cell solution"><input type="text" value="R"></div>
-        <div class="riddle-cell"><input type="text" value="a"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 13">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="n"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="o"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 14">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell question-label">13C ↓</div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell solution"><input type="text" value="N"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 15">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell solution"><input type="text" value="C"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell question-label">08G →</div>
-        <div class="riddle-cell"><input type="text" value="z"></div>
-        <div class="riddle-cell"><input type="text" value="i"></div>
-        <div class="riddle-cell"><input type="text" value="n"></div>
-        <div class="riddle-cell"><input type="text" value="o"></div>
-        <div class="riddle-cell solution"><input type="text" value="G"></div>
-        <div class="riddle-cell"><input type="text" value="r"></div>
-        <div class="riddle-cell"><input type="text" value="e"></div>
-      </div>
-      <div class="riddle-row 16">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="i"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="g"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 17">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="r"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"><input type="text" value="h"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-      </div>
-      <div class="riddle-row 18">
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell question-label">10W →</div>
-        <div class="riddle-cell solution"><input type="text" value="W"></div>
-        <div class="riddle-cell"><input type="text" value="e"></div>
-        <div class="riddle-cell"><input type="text" value="i"></div>
-        <div class="riddle-cell"><input type="text" value="ß"></div>
-        <div class="riddle-cell"><input type="text" value="g"></div>
-        <div class="riddle-cell"><input type="text" value="a"></div>
-        <div class="riddle-cell"><input type="text" value="r"></div>
-        <div class="riddle-cell"><input type="text" value="t"></div>
-        <div class="riddle-cell"><input type="text" value="e"></div>
-        <div class="riddle-cell"><input type="text" value="n"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
-        <div class="riddle-cell"></div>
+      <div class="riddles">
+        <span>Horizontal →</span>
+        <ul>
+          <li>
+            <div>
+              <span>01</span>
+              <span>LoL</span>
+            </div>
+            <p>
+              Welche Kreaturen erscheint alle 5 Minuten in der oberen Flussregion und gewährt Teammitgliedern einen Buff?
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>03</span>
+              <span>Monster Hunter</span>
+            </div>
+            <p>
+              Welcher Vogelwyver in Monster Hunter ist bekannt für seine Fähigkeit, andere Monster herbeizurufen?
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>08</span>
+              <span>Monster Hunter</span>
+            </div>
+            <p>
+              Welches Monster in Monster Hunter ist bekannt für seine Fähigkeit, Blitzenergie zu nutzen, und hat einen wolfähnlichen Körperbau?
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>10</span>
+              <span>LoL</span>
+            </div>
+            <p>
+              Welcher Champion ist bekannt für seine Fähigkeit "Dunkle Sphäre" und nutzt dunkle Magie?
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>11</span>
+              <span>LoL</span>
+            </div>
+            <p>
+              Welcher Begriff wird im League of Legends Slang verwendet, um eine Position zu markieren, an der Gegner vermutet werden?
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>12</span>
+              <span>Witcher</span>
+            </div>
+            <p>
+              Wie heißt das Gebiet, das man zu beginn der Handlung von "The Witcher 3: Wild Hunt" vollständig erkunden kann?
+            </p>
+          </li>
+        </ul>
+        <span>Vertikal ↓</span>
+        <ul>
+          <li>
+            <div>
+              <span>02</span>
+              <span>LoL</span>
+            </div>
+            <p>
+              Wie nennt man die Verteidigungsstrukturen in League of Legends, die auf den Lanes platziert sind und die gegnerischen Vasallen und Champions angreifen?
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>04</span>
+              <span>Monster Hunter</span>
+            </div>
+            <p>
+              Zu welcher Monsterklasse gehört Rathalos, der "König der Lüft"?
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>05</span>
+              <span>Witcher</span>
+            </div>
+            <p>
+              Wie heißt das legendäre Reliktschwert, das Geralt in Witcher 3 Blood and Wine finden kann
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>06</span>
+              <span>Witcher</span>
+            </div>
+            <p>
+              Wie heißt der Kaiser, der Geralt in der Stadt Wyzima trifft?
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>07</span>
+              <span>LoL</span>
+            </div>
+            <p>
+              Wie heißt das Hauptgebäude, das zerstört werden muss, um ein Spiel in League of Legends zu gewinnen? 
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>09</span>
+              <span>Witcher</span>
+            </div>
+            <p>
+              Wie heißt die berühmte Stadt in Witcher 3, die für ihre reiche Kultur und ihre Künstler bekannt ist?
+            </p>
+          </li>
+          <li>
+            <div>
+              <span>13</span>
+              <span>Witcher</span>
+            </div>
+            <p>
+              Welcher Charakter in The Witcher 3 hat die Fähigkeit, durch Zeit und Raum zu reisen?
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
   <script>
     const app = Vue.createApp({
       data() {
         return {
-          inputText: ''
+          // Horizontal
+          s01C: '',
+          s03Q: '',
+          s10R: '',
+          s08G: '',
+          s11P: '',
+          s12W: '',
+
+          //Vertikal
+          s02T: '',
+          s04W: '',
+          s09A: '',
+          s07X: '',
+          s05N: '',
+          s13C: '',
+          s06M: ''
         };
       }
     }).mount('#app');
   </script>
 </body>
 <style lang="scss">
+body {
+  margin: 0;
+}
+
+.riddles {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: fantasy;
+  text-shadow: 2px 2px BLACK;
+  color: #fff;
+  backdrop-filter: blur(30px);
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 3rem;
+  margin-top: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: #0000004d;
+  letter-spacing: 1.5px;
+
+  ul {
+    li {
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
 #app {
-  span {
-    color: red;
+    background: url(https://cdna.artstation.com/p/assets/images/images/053/247/440/4k/grafit-studio-dragon-soul-environment-08february2022-1.jpg?1661782653);       
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    .container {
+      padding: 3rem;
+      /* max-height: calc(100% - 6rem); */
+  }
+}
+
+.key-full-solution {    
+  display: flex;
+  max-width: 1800px;
+  margin: 0 auto;
+  backdrop-filter: blur(30px);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 70px;
+  overflow: hidden;
+  position: relative;
+  padding: 0 3rem;
+  gap: 1rem;
+
+  /* &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 100%;
+    height: 100%;
+  } */
+
+  .key-solution {
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 5rem;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
 .key-riddle {
   display: table;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 190px);
   border-collapse: collapse;
+  max-width: 1800px;
+  margin: 0 auto;
 
   .riddle-row {
     display: table-row;
@@ -353,34 +584,58 @@
 
   .riddle-cell {
     display: table-cell;
-    border: 1px solid #333;
-    background-color: lightblue;
     text-align: center;
     vertical-align: middle;
     width: calc(100% / 15); /* 15 Spalten */
     height: calc(100% / 18); /* 18 Zeilen */
-    overflow: hidden;
+    padding: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 
     input[type=text] {
       width: 100%;
       height: 100%;
       text-align: center;
       font-weight: inherit;
+      padding-block: 0px;
+      padding-inline: 0px;
+      border: 0px solid;
+      border-radius: 15px;
+      background: none;
+      backdrop-filter: blur(30px);
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: fantasy;
+      text-shadow: 2px 2px BLACK;
+      letter-spacing: 2px;
+      color: #fff;
+
+      &:focus-visible {
+        outline: none;
+                box-shadow: inset 0px 0px 14px 3px #fedb37, rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+      }
     }
 
     &.solution {
       font-weight: 900;
 
       input[type=text] {
-        background: #dfdfdf;
+        box-shadow: inset 0px 0px 14px 3px #00ae18, rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px
       }
     }
 
     &.question-label {
-      background:lightcoral;
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: fantasy;
+      text-shadow: 2px 2px BLACK;
+      letter-spacing: 2px;
     }
   }
 }
+
 
 
 </style>
