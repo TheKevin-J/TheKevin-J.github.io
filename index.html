@@ -352,7 +352,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>03</span>
+              <span class="riddle-number">03</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/en/7/71/Monster_Hunter_logo.png" /></span>
             </div>
             <p>
@@ -361,7 +361,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>08</span>
+              <span class="riddle-number">08</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/en/7/71/Monster_Hunter_logo.png" /></span>
             </div>
             <p>
@@ -370,7 +370,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>10</span>
+              <span class="riddle-number">10</span>
               <span class="game"><img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" /></span>
             </div>
             <p>
@@ -379,7 +379,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>11</span>
+              <span class="riddle-number">11</span>
               <span class="game"><img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" /></span>
             </div>
             <p>
@@ -388,7 +388,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>12</span>
+              <span class="riddle-number">12</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
             </div>
             <p>
@@ -400,7 +400,7 @@
         <ul>
           <li>
             <div class="riddle-label">
-              <span>02</span>
+              <span class="riddle-number">02</span>
               <span class="game"><img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" /></span>
             </div>
             <p>
@@ -409,7 +409,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>04</span>
+              <span class="riddle-number">04</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/en/7/71/Monster_Hunter_logo.png" /></span>
             </div>
             <p>
@@ -418,7 +418,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>05</span>
+              <span class="riddle-number">05</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
             </div>
             <p>
@@ -427,7 +427,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>06</span>
+              <span class="riddle-number">06</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
             </div>
             <p>
@@ -436,7 +436,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>07</span>
+              <span class="riddle-number">07</span>
               <span class="game"><img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" /></span>
             </div>
             <p>
@@ -445,7 +445,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>09</span>
+              <span class="riddle-number">09</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
             </div>
             <p>
@@ -454,7 +454,7 @@
           </li>
           <li>
             <div class="riddle-label">
-              <span>13</span>
+              <span class="riddle-number">13</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
             </div>
             <p>
@@ -503,7 +503,7 @@ p {
 .riddles {
   font-size: 1.5rem;
   font-family: fantasy;
-  text-shadow: 2px 2px BLACK;
+  text-shadow: 0px 0px 3px BLACK;
   color: #fff;
   backdrop-filter: blur(30px);
   border-radius: 50px;
@@ -524,22 +524,56 @@ p {
       padding: 1rem;
       border-radius: 1rem;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      overflow: hidden;
+
+      p {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        width: 70%;
+      }
 
       .riddle-label {
         display: flex;
         gap: 0.5rem;
+        position: relative;
+      }
+
+      .riddle-number {
+        padding: 0.5rem;
+        width: 32px;
+        position: absolute;
+        top: -1rem;
+        left: -1.3rem;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        border-bottom-right-radius: 50%;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        justify-content: center;
       }
 
       span {
         margin-right: 5px;
       }
+
       .game {
-        display: block;
+        padding: 0.5rem;
         width: 32px;
+        position: absolute;
+        top: -1rem;
+        right: -1.3rem;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        border-bottom-left-radius: 50%;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        background: #fff;
 
         img {
           width: 100%;
         }
+
       }
     }
   }
