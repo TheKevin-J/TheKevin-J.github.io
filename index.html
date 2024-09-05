@@ -10,6 +10,9 @@
 <body>
   <div id="app">
     <!-- <input v-model="s01C" type="text" placeholder="Schreib etwas..."> -->
+    <div class="container mobile-warning">
+      <div>PC only</div>
+    </div>
     <div class="container">
       <div class="key-full-solution"><div class="key-solution static">RE-</div>
       <div class="border-wrapper">
@@ -615,9 +618,39 @@ p {
     /* height: 100vh; */
     .container {
       padding: 3rem;
-      /* max-height: calc(100% - 6rem); */
+
+      &:not(.mobile-warning) {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      &.mobile-warning {
+        @media (min-width: 769px) {
+          display: none;
+        }
+        @media (max-width: 768px) {
+          width: 100vw;
+          height: 100vh;
+          text-align: center;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          backdrop-filter: blur(10px);
+          font-size: 1.5rem;
+          font-family: fantasy;
+          text-shadow: 0px 0px 3px BLACK;
+          color: #fff;
+        }
+      }
   }
 }
+
+
+
+
 
 .key-full-solution {    
   display: flex;
