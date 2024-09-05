@@ -11,24 +11,49 @@
   <div id="app">
     <!-- <input v-model="s01C" type="text" placeholder="Schreib etwas..."> -->
     <div class="container">
-      <div class="key-full-solution">
-        <div class="key-solution">RE-</div>
-        <div class="key-solution">{{ s01C }}</div>
-        <div class="key-solution">{{ s02T }}</div>
-        <div class="key-solution">{{ s03Q }}</div>
-        <div class="key-solution">{{ s04W }}</div>
-        <div class="key-solution">5</div>
-        <div class="key-solution">{{ s05N }}</div>
-        <div class="key-solution">{{ s06M }}</div>
-        <div class="key-solution">{{ s07X }}</div>
-        <div class="key-solution">{{ s08G }}</div>
-        <div class="key-solution">{{ s09A }}</div>
-        <div class="key-solution">{{ s10R }}</div>
-        <div class="key-solution">{{ s11P }}</div>
-        <div class="key-solution">{{ s12W }}</div>
-        <div class="key-solution">8</div>
-        <div class="key-solution">3</div>
-        <div class="key-solution">{{ s13C }}</div>
+      <div class="key-full-solution"><div class="key-solution static">RE-</div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s01C }"><span>{{ s01C }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s02T }"><span>{{ s02T }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s03Q }"><span>{{ s03Q }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s04W }"><span>{{ s04W }}</span></div>
+      </div>
+      <div class="key-solution static">5</div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s05N }"><span>{{ s05N }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s06M }"><span>{{ s06M }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s07X }"><span>{{ s07X }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s08G }"><span>{{ s08G }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s09A }"><span>{{ s09A }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s10R }"><span>{{ s10R }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s11P }"><span>{{ s11P }}</span></div>
+      </div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s12W }"><span>{{ s12W }}</span></div>
+      </div>
+      <div class="key-solution static">8</div>
+      <div class="key-solution static">3</div>
+      <div class="border-wrapper">
+        <div class="key-solution" :class="{ active: s13C }"><span>{{ s13C }}</span></div>
+      </div>
       </div>
       <div class="key-riddle">
         <div class="riddle-row 1">
@@ -341,7 +366,7 @@
       <div class="riddles">
         <span>Horizontal →</span>
         <ul>
-          <li>
+          <li :class="{ active: s01C }">
             <div class="riddle-label">
               <span class="riddle-number">01</span>
               <span class="game"><img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" /></span>
@@ -350,7 +375,7 @@
               Welche Kreaturen erscheint alle 5 Minuten in der oberen Flussregion und gewährt Teammitgliedern einen Buff?
             </p>
           </li>
-          <li>
+          <li :class="{ active: s03Q }">
             <div class="riddle-label">
               <span class="riddle-number">03</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/en/7/71/Monster_Hunter_logo.png" /></span>
@@ -359,7 +384,7 @@
               Welcher Vogelwyver in Monster Hunter ist bekannt für seine Fähigkeit, andere Monster herbeizurufen?
             </p>
           </li>
-          <li>
+          <li :class="{ active: s08G }">
             <div class="riddle-label">
               <span class="riddle-number">08</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/en/7/71/Monster_Hunter_logo.png" /></span>
@@ -368,7 +393,7 @@
               Welches Monster in Monster Hunter ist bekannt für seine Fähigkeit, Blitzenergie zu nutzen, und hat einen wolfähnlichen Körperbau?
             </p>
           </li>
-          <li>
+          <li :class="{ active: s10R }">
             <div class="riddle-label">
               <span class="riddle-number">10</span>
               <span class="game"><img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" /></span>
@@ -377,7 +402,7 @@
               Welcher Champion ist bekannt für seine Fähigkeit "Dunkle Sphäre" und nutzt dunkle Magie?
             </p>
           </li>
-          <li>
+          <li :class="{ active: s11P }">
             <div class="riddle-label">
               <span class="riddle-number">11</span>
               <span class="game"><img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" /></span>
@@ -386,7 +411,7 @@
               Welcher Begriff wird im League of Legends Slang verwendet, um eine Position zu markieren, an der Gegner vermutet werden?
             </p>
           </li>
-          <li>
+          <li :class="{ active: s12W }">
             <div class="riddle-label">
               <span class="riddle-number">12</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
@@ -398,7 +423,7 @@
         </ul>
         <span>Vertikal ↓</span>
         <ul>
-          <li>
+          <li :class="{ active: s02T }">
             <div class="riddle-label">
               <span class="riddle-number">02</span>
               <span class="game"><img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" /></span>
@@ -407,7 +432,7 @@
               Wie nennt man die Verteidigungsstrukturen in League of Legends, die auf den Lanes platziert sind und die gegnerischen Vasallen und Champions angreifen?
             </p>
           </li>
-          <li>
+          <li :class="{ active: s04W }">
             <div class="riddle-label">
               <span class="riddle-number">04</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/en/7/71/Monster_Hunter_logo.png" /></span>
@@ -416,7 +441,7 @@
               Zu welcher Monsterklasse gehört Rathalos, der "König der Lüft"?
             </p>
           </li>
-          <li>
+          <li :class="{ active: s05N }">
             <div class="riddle-label">
               <span class="riddle-number">05</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
@@ -425,7 +450,7 @@
               Wie heißt das legendäre Reliktschwert, das Geralt in Witcher 3 Blood and Wine finden kann
             </p>
           </li>
-          <li>
+          <li :class="{ active: s06M }">
             <div class="riddle-label">
               <span class="riddle-number">06</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
@@ -434,7 +459,7 @@
               Wie heißt der Kaiser, der Geralt in der Stadt Wyzima trifft?
             </p>
           </li>
-          <li>
+          <li :class="{ active: s07X }">
             <div class="riddle-label">
               <span class="riddle-number">07</span>
               <span class="game"><img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" /></span>
@@ -443,7 +468,7 @@
               Wie heißt das Hauptgebäude, das zerstört werden muss, um ein Spiel in League of Legends zu gewinnen? 
             </p>
           </li>
-          <li>
+          <li :class="{ active: s09A }">
             <div class="riddle-label">
               <span class="riddle-number">09</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
@@ -452,7 +477,7 @@
               Wie heißt die berühmte Stadt in Witcher 3, die für ihre reiche Kultur und ihre Künstler bekannt ist?
             </p>
           </li>
-          <li>
+          <li :class="{ active: s13C }">
             <div class="riddle-label">
               <span class="riddle-number">13</span>
               <span class="game"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/1200px-EN_The-Witcher-3_Logo-Black_RGB.svg.png" /></span>
@@ -525,6 +550,10 @@ p {
       border-radius: 1rem;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       overflow: hidden;
+
+      &.active {
+        opacity: 0.5;
+      }
 
       p {
         margin-left: 3rem;
@@ -613,6 +642,13 @@ p {
     height: 100%;
   } */
 
+  .border-wrapper {
+    width: 100%;
+    border-bottom: 2px solid #ffffff30;
+    margin-bottom: 10px;
+    height: 96px;
+  }
+
   .key-solution {
     flex-grow: 1;
     text-align: center;
@@ -624,9 +660,20 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 100%;
-    border-bottom: 2px solid #ffffff30;
-    width: 100%;
-    margin-bottom: 10px;
+
+    &.static {
+      border-bottom: 2px solid #ffffff30;
+      margin-bottom: 10px;
+    }
+
+    &:not(.static) {
+      transform: scale(0);
+      transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
+    &.active {
+      transform: scale(1);
+    }
   }
 }
 
